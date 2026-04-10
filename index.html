@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingrid Fitzgerald | Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --text: #111827;
+        --muted: #6b7280;
+        --line: #e5e7eb;
+        --accent: #0f172a;
+        --link: #2563eb;
+        --max: 900px; /* wider content for better bullet readability */
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 90px;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        color: var(--text);
+        background: white;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
+
+      .top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        display: flex;
+        justify-content: flex-end;
+        gap: 18px;
+        padding: 14px 28px;
+        background: #ffffff; /* solid white */
+        border-bottom: 1px solid var(--line);
+      }
+
+      .top-bar a {
+        color: var(--text); /* black text */
+        font-weight: 500;
+      }
+
+      .top-bar a:hover {
+        text-decoration: underline;
+      }
+
+      .nav-divider {
+        display: none;
+      }
+
+      .container {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 110px 24px 72px; /* extra top space so content is not hidden */
+      }
+
+      .hero {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #f3f4f6;
+        margin: 0 auto 20px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 2rem;
+      }
+
+      .email {
+        color: var(--muted);
+        margin-bottom: 10px;
+      }
+
+      .socials {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 6px;
+      }
+
+      .resume-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 16px;
+        padding: 6px 10px; /* smaller */
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--text);
+        background: transparent; /* no fill */
+        border: 1px solid var(--line); /* subtle outline */
+        border-radius: 999px;
+        text-decoration: none;
+      }
+
+      .resume-link:hover {
+        background: #f9fafb; /* very subtle hover */
+        text-decoration: none;
+      }
+
+      .resume-link:hover {
+        text-decoration: none;
+        opacity: 0.92;
+      }
+
+      .section-title {
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 1rem; /* increased size */
+        letter-spacing: 0.08em;
+        color: var(--text); /* darker for emphasis */
+        margin-bottom: 10px;
+      }
+
+      .divider {
+        border-top: 1px solid var(--line);
+        margin-bottom: 20px;
+      }
+
+      .entry {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        margin-bottom: 20px;
+      }
+
+      /* Tighter spacing for certifications */
+      #certifications .entry {
+        margin-bottom: 10px;
+      }
+
+      /* Space after certifications section */
+      #certifications {
+        margin-bottom: 40px;
+      }
+
+      /* Consistent spacing for all sections */
+      section {
+        margin-bottom: 40px;
+      }
+
+      .entry ul {
+        grid-column: 1 / -1;
+      }
+
+      .entry-meta {
+        color: var(--muted);
+      }
+
+      .project {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+
+      /* Project title links */
+      .project a {
+        color: var(--text); /* black by default */
+        text-decoration: none;
+      }
+
+      .project a:hover {
+        color: var(--link); /* blue on hover */
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="top-bar">
+      <a href="#certifications">Certifications</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Professional Experience</a>
+      <a href="#projects">Projects</a>
+    </nav>
+    <div class="nav-divider"></div>
+
+    <div class="container">
+      <header class="hero">
+        <img
+          class="avatar"
+          src="https://avatars.githubusercontent.com/u/274309571?v=4"
+          alt="Ingrid profile photo"
+        />
+        <h1>Ingrid Fitzgerald</h1>
+        <div class="email">ingridfitzgeraldd@gmail.com.com</div>
+
+        <div class="socials">
+          <a
+            href="https://www.linkedin.com/in/ingridfitzgerald/"
+            target="_blank"
+            style="display: inline-flex; align-items: center; gap: 6px"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.66-1.85 3.42-1.85 3.66 0 4.34 2.41 4.34 5.54v6.2zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45z"
+              />
+            </svg>
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/ingridsec"
+            target="_blank"
+            style="display: inline-flex; align-items: center; gap: 6px"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.52-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.19a10.9 10.9 0 015.79 0c2.21-1.5 3.18-1.19 3.18-1.19.62 1.59.23 2.76.11 3.05.74.81 1.18 1.85 1.18 3.11 0 4.43-2.69 5.41-5.26 5.7.41.35.77 1.03.77 2.08 0 1.5-.01 2.7-.01 3.07 0 .31.2.67.79.56A10.52 10.52 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"
+              />
+            </svg>
+            GitHub
+          </a>
+        </div>
+
+        <a
+          class="resume-link"
+          href="https://raw.githubusercontent.com/ingridsec/resume/ac260c5de38d2ee58e4948cd062325b9dc6fadf3/IFitzgeraldResume.pdf"
+          target="_blank"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 3a1 1 0 011 1v8.59l2.3-2.29 1.4 1.41-4.7 4.7-4.7-4.7 1.4-1.41L11 12.59V4a1 1 0 011-1zm-7 14h14v2H5v-2z"
+            />
+          </svg>
+          Download Resume
+        </a>
+
+        <div style="margin-top: 20px">
+          <div class="section-title">Professional Summary</div>
+          <p>
+            Dynamic cybersecurity professional with specialized training in
+            threat intelligence, security operations, and digital forensics,
+            backed by 6+ years of advanced data science experience. Highly
+            skilled in conducting penetration testing, mitigating security
+            attacks, and incident response. Proven ability to translate complex
+            technical findings into actionable insights for executive and
+            cross-functional teams, applying an analytical and investigative
+            mindset to detect, analyze, and mitigate cyber threats. Recognized
+            for staying up-to-date on evolving cybersecurity trends and tools.
+          </p>
+        </div>
+      </header>
+
+      <section id="certifications">
+        <div class="section-title">Certifications</div>
+        <div class="divider"></div>
+
+        <div class="entry">
+          <div>
+            <strong>CompTIA Security+ (In Progress)</strong>
+          </div>
+          <div class="entry-meta">04/2026</div>
+        </div>
+
+        <div class="entry">
+          <div>
+            <strong>Cybersecurity Practitioner Certification</strong>,
+            Montgomery College
+          </div>
+          <div class="entry-meta">04/2026</div>
+        </div>
+
+        <div class="entry">
+          <div>
+            <strong>SOC Operations Analyst (SOCOA I)</strong>, BCR Cyber
+          </div>
+          <div class="entry-meta">11/2025</div>
+        </div>
+
+        <div class="entry">
+          <div>
+            <strong>Industrial Control Systems Security</strong>, The University
+            of Texas at San Antonio
+          </div>
+          <div class="entry-meta">08/2025</div>
+        </div>
+
+        <div class="entry">
+          <div>
+            <strong>Malware Discovery and Investigation</strong>, The University
+            of Texas at San Antonio
+          </div>
+          <div class="entry-meta">05/2025</div>
+        </div>
+
+        <div class="entry">
+          <div>
+            <strong>Digital Forensic Analysis</strong>, The University of Texas
+            at San Antonio
+          </div>
+          <div class="entry-meta">03/2025</div>
+        </div>
+
+        <div class="entry">
+          <div>
+            <strong>Cybersecurity Bootcamp</strong>, Maryland University
+          </div>
+          <div class="entry-meta">05/2025</div>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="section-title">Education</div>
+        <div class="divider"></div>
+
+        <div class="entry">
+          <div>
+            <strong>Master of Science in Applied Data Science</strong>
+            <div>Syracuse University</div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div>
+            <strong>B.S. International Business</strong>
+            <div>Universidad Popular Autónoma del Estado de Puebla, Mexico</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-title">Skills</div>
+        <div class="divider"></div>
+
+        <p>
+          Threat Intelligence, SIEM (Splunk), Vulnerability Management,
+          Penetration Testing, Incident Response, OSINT, Network Analysis, Risk
+          Assessment
+        </p>
+        <p>
+          <strong>Security Tools:</strong> Wireshark, Nmap, Nessus, Metasploit,
+          Burp Suite, ELK Stack, YARA, Kali Linux, Autopsy, Python
+        </p>
+      </section>
+
+      <section id="experience">
+        <div class="section-title">Professional Experience</div>
+        <div class="divider"></div>
+
+        <div class="entry">
+          <div>
+            <strong>Data Scientist</strong>
+            <div>Catholic Relief Services · Baltimore, MD</div>
+            <ul>
+              <li>
+                Architected and deployed machine learning models and AI-driven
+                data pipelines that increased productivity by 33%, reduced
+                processing time by 20%, and improved data quality by 23%,
+                leveraging advanced preprocessing, feature engineering, and
+                model optimization techniques
+              </li>
+              <li>
+                Translated complex data findings into actionable C-suite
+                recommendations through analytical reports and presentations,
+                contributing to $200M+ revenue achievement
+              </li>
+              <li>
+                Established enterprise-wide data governance frameworks, leading
+                cross-functional initiatives for ethical AI practices, data
+                privacy compliance, and quality assurance standards
+              </li>
+              <li>
+                Applied analytical techniques to identify anomalies and
+                potential risks in large datasets, supporting early detection of
+                irregular patterns and investigative analysis
+              </li>
+              <li>
+                Designed scalable data architectures and data pipelines,
+                creating comprehensive data models and documentation that
+                improved system performance and data accessibility, utilizing
+                analytical&nbsp;skills
+              </li>
+              <li>
+                Collaborated with 5+ cross-functional teams to develop advanced
+                AI solutions for automated pattern detection and sentiment
+                analysis, creating interactive dashboards and investigative
+                workflows that enhanced data collection efficiency and delivered
+                actionable intelligence to executive leadership
+              </li>
+              <li>
+                Implemented comprehensive data security protocols and quality
+                assurance measures for Personally Identifiable Information PII
+                and sensitive data, ensuring compliance with privacy regulations
+                and establishing audit trails for secure data handling across
+                enterprise systems
+              </li>
+            </ul>
+          </div>
+          <div class="entry-meta">01/2018 – 10/2024</div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-title">Projects</div>
+        <div class="divider"></div>
+
+        <div class="project">
+          <div>
+            <a
+              href="https://github.com/ingridsec/Projects/blob/main/1.%20Full-Scope%20Penetration%20Testing%20Engagement%20Report.pdf"
+              target="_blank"
+              ><strong
+                >Full-Scope Penetration Testing Engagement Report</strong
+              ></a
+            >
+            <div style="color: var(--muted)">Penetration Testing · Report</div>
+          </div>
+          <a
+            href="https://github.com/ingridsec/Projects/blob/main/1.%20Full-Scope%20Penetration%20Testing%20Engagement%20Report.pdf"
+            target="_blank"
+            >🔗</a
+          >
+        </div>
+
+        <div class="project">
+          <div>
+            <a
+              href="https://github.com/ingridsec/Projects/blob/main/Critical%20Data%20Exposure%20Vulnerability%20Report%20Vulnerability%20Program%20(Bug%20Bounty).pdf"
+              target="_blank"
+              ><strong
+                >Critical Data Exposure Vulnerability Report (Bug
+                Bounty)</strong
+              ></a
+            >
+            <div style="color: var(--muted)">
+              Vulnerability Research · Bug Bounty
+            </div>
+          </div>
+          <a
+            href="https://github.com/ingridsec/Projects/blob/main/Critical%20Data%20Exposure%20Vulnerability%20Report%20Vulnerability%20Program%20(Bug%20Bounty).pdf"
+            target="_blank"
+            >🔗</a
+          >
+        </div>
+
+        <div class="project">
+          <div>
+            <a
+              href="https://github.com/ingridsec/Projects/blob/main/Network%20Vulnerability%20Scan%20Nessus.pdf"
+              target="_blank"
+              ><strong>Network Vulnerability Scan (Nessus)</strong></a
+            >
+            <div style="color: var(--muted)">
+              Vulnerability Scanning · Nessus
+            </div>
+          </div>
+          <a
+            href="https://github.com/ingridsec/Projects/blob/main/Network%20Vulnerability%20Scan%20Nessus.pdf"
+            target="_blank"
+            >🔗</a
+          >
+        </div>
+
+        <div class="project">
+          <div>
+            <a
+              href="https://github.com/ingridsec/Projects/blob/main/Passive%20Reconnaissance%20HacksearchPro.pdf"
+              target="_blank"
+              ><strong>Passive Reconnaissance (HacksearchPro)</strong></a
+            >
+            <div style="color: var(--muted)">OSINT · Reconnaissance</div>
+          </div>
+          <a
+            href="https://github.com/ingridsec/Projects/blob/main/Passive%20Reconnaissance%20HacksearchPro.pdf"
+            target="_blank"
+            >🔗</a
+          >
+        </div>
+
+        <div class="project">
+          <div>
+            <a
+              href="https://github.com/ingridsec/Projects/blob/main/Password%20Cracking%20CainAndAbel.pdf"
+              target="_blank"
+              ><strong>Password Cracking (Cain & Abel)</strong></a
+            >
+            <div style="color: var(--muted)">Password Security · Cracking</div>
+          </div>
+          <a
+            href="https://github.com/ingridsec/Projects/blob/main/Password%20Cracking%20CainAndAbel.pdf"
+            target="_blank"
+            >🔗</a
+          >
+        </div>
+
+        <div class="project">
+          <div>
+            <a
+              href="https://github.com/ingridsec/Projects/blob/main/Web%20Vulnerability%20Scan%20Nikto.pdf"
+              target="_blank"
+              ><strong>Web Vulnerability Scan (Nikto)</strong></a
+            >
+            <div style="color: var(--muted)">Web Security · Nikto</div>
+          </div>
+          <a
+            href="https://github.com/ingridsec/Projects/blob/main/Web%20Vulnerability%20Scan%20Nikto.pdf"
+            target="_blank"
+            >🔗</a
+          >
+        </div>
+
+        <div class="project">
+          <div>
+            <a
+              href="https://github.com/ingridsec/Projects/blob/main/Vulnerability%20Research%20CVE%20Database.pdf"
+              target="_blank"
+              ><strong>Vulnerability Research (CVE Database)</strong></a
+            >
+            <div style="color: var(--muted)">Threat Research · CVEs</div>
+          </div>
+          <a
+            href="https://github.com/ingridsec/Projects/blob/main/Vulnerability%20Research%20CVE%20Database.pdf"
+            target="_blank"
+            >🔗</a
+          >
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
